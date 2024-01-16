@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "John Lemon.sln"
+    "dotnet.defaultSolution": "John Lemon.sln",
+    "dotnet.preferCSharpExtension": true
 }
