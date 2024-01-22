@@ -5,48 +5,41 @@ using UnityEngine;
 public class Observer : MonoBehaviour
 {
     public Transform player;
+    public GameEnd gameEnding;
 
+    bool m_IsPlayerInRange;
 
-
-    
-    bool  m_PlayerInRange;
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter (Collider other)
     {
-        
+        if (other.transform == player)
+        {
+            m_IsPlayerInRange = true;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerExit (Collider other)
     {
-        if(m_PlayerInRange)
+        if (other.transform == player)
+        {
+            m_IsPlayerInRange = false;
+        }
+    }
+
+    void Update ()
+    {
+        if (m_IsPlayerInRange)
         {
             Vector3 direction = player.position - transform.position + Vector3.up;
-            Ray ray = new Ray (transform.position, direction);
+            Ray ray = new Ray(transform.position, direction);
             RaycastHit raycastHit;
 
             if(Physics.Raycast(ray, out raycastHit))
             {
-                if(raycastHit.collider.transform == player)
+                if (raycastHit.collider.transform == player)
                 {
-
+                      gameEnding.CaughtPlayer (); 
                 }
             }
-
-        }
-    }
-    void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject == player)
-        {
-            m_PlayerInRange = true;
-        }
-    }
-    void OnTriggerExit(Collider other)
-    {
-        if(other.gameObject == player)
-        {
-            m_PlayerInRange = false;
         }
     }
 }
