@@ -26,12 +26,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2457937376642179273}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17364818, y: -0, z: -0, w: 0.98480785}
-  m_LocalPosition: {x: 0, y: 1.4, z: 0.40000027}
+  m_LocalRotation: {x: 0.17364818, y: -0, z: -0.0000000018626449, w: 0.9848078}
+  m_LocalPosition: {x: 0, y: 1.4, z: 0.4000005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1882059617824128545}
+  m_Father: {fileID: 1882059617824128933}
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
 --- !u!136 &1996676401056549580
 CapsuleCollider:
@@ -80,7 +80,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: d3312d02a690eda48bd6807bf5c78084, type: 3}
       propertyPath: m_Name
-      value: Gargoyle 1
+      value: Gargoyle script
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d3312d02a690eda48bd6807bf5c78084, type: 3}
       propertyPath: m_LocalPosition.x
@@ -129,7 +129,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 400132, guid: d3312d02a690eda48bd6807bf5c78084,
+    - targetCorrespondingSourceObject: {fileID: 400000, guid: d3312d02a690eda48bd6807bf5c78084,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5369052117625548955}
@@ -139,9 +139,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2140406362704990070}
   m_SourcePrefab: {fileID: 100100000, guid: d3312d02a690eda48bd6807bf5c78084, type: 3}
---- !u!4 &1882059617824128545 stripped
+--- !u!4 &1882059617824128933 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 400132, guid: d3312d02a690eda48bd6807bf5c78084,
+  m_CorrespondingSourceObject: {fileID: 400000, guid: d3312d02a690eda48bd6807bf5c78084,
     type: 3}
   m_PrefabInstance: {fileID: 1882059617824253221}
   m_PrefabAsset: {fileID: 0}
